@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/arvind/static/css/main.41798ebc.css",
-    "main.js": "/arvind/static/js/main.c6e209fb.js",
+    "main.js": "/arvind/static/js/main.4c493931.js",
     "static/media/mysql.png": "/arvind/static/media/mysql.167c88550478e6f0f85c.png",
     "static/media/typescript.png": "/arvind/static/media/typescript.d362ac9034fd59687ef3.png",
     "static/media/logo1.png": "/arvind/static/media/logo1.472e0fa2fdbc718d2844.png",
     "static/media/ror.png": "/arvind/static/media/ror.56e6b82c8b578e04dd5f.png",
     "static/media/jquery.png": "/arvind/static/media/jquery.18cb56a7d001d39edc93.png",
     "static/media/react.png": "/arvind/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/arvind_kumar_Resume.doc": "/arvind/static/media/arvind_kumar_Resume.7722fa6910cefb377c5c.doc",
     "static/media/aws.png": "/arvind/static/media/aws.95bdee6b9922c9b94fd5.png",
     "static/media/node.png": "/arvind/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/csharp.png": "/arvind/static/media/csharp.82739bedbdacc34c97a0.png",
@@ -18,10 +19,10 @@
     "static/media/javascript.png": "/arvind/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/arvind/index.html",
     "main.41798ebc.css.map": "/arvind/static/css/main.41798ebc.css.map",
-    "main.c6e209fb.js.map": "/arvind/static/js/main.c6e209fb.js.map"
+    "main.4c493931.js.map": "/arvind/static/js/main.4c493931.js.map"
   },
   "entrypoints": [
     "static/css/main.41798ebc.css",
-    "static/js/main.c6e209fb.js"
+    "static/js/main.4c493931.js"
   ]
 }
