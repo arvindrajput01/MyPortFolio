@@ -92,7 +92,7 @@ const Skills = () => {
                         <p className='my-4'>Type Script</p>
                     </div>
                 </div>
-                <span className="w-[190px] border-b border-transparent pb-px transition hover:border-pink-600 font-bold font-sans hover:scale-110 duration-500 motion-reduce:transition-none ">               
+                <span className=" sm:hidden w-[190px] border-b border-transparent pb-px transition hover:border-pink-600 font-bold font-sans hover:scale-110 duration-500 motion-reduce:transition-none ">               
                   <a  className='flex justify-between  w-full items-center text-gray-300 ' href={Myresume} target='_blank'>
                   View Full Resume <IoIosArrowRoundForward size={50} className="fill-pink-600"/>
                 </a></span>
