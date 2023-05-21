@@ -20,7 +20,9 @@ const Home = () => {
               <p className= 'text-pink-500'>Hi, my name is</p>
               <h1 className= 'text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Arvind Rajput</h1>
               <h2 className= 'text-4xl sm:text-7xl font-bold text-[#8892b0]'>I'm a Full Stack Developer.</h2>
-              <p className= 'text-[#8892b0] py-4 max-w-[700px]'>i'm a full-stack developer specializing in building and occasionally designing the Ruby on Rails Application. Currently, I am focused on building responsive full-stack web applications.</p>
+              <p className= 'text-[#8892b0] py-4 max-w-[700px]'>
+              I am a skilled full-stack developer with expertise in building and occasionally designing Ruby on Rails applications. My primary focus lies in creating responsive, user-friendly full-stack web applications. With a comprehensive understanding of both front-end and back-end development, I have the ability to deliver end-to-end solutions using the powerful Ruby on Rails framework. My portfolio showcases a range of successful projects where I have leveraged my expertise to build robust, scalable, and visually appealing web applications. I am passionate about staying up-to-date with the latest web development trends and technologies, allowing me to deliver modern and cutting-edge solutions to clients. With a strong attention to detail and a dedication to providing the best user experience, I take pride in delivering high-quality applications that meet the unique needs of each project. By combining my technical skills with my creativity, I strive to create innovative and impactful solutions that make a positive difference.
+              </p>
               <div>
 
                   <Link to='work' smooth={true} duration={500} >
