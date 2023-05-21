@@ -1,20 +1,10 @@
-import { React,MouseEvent} from  "react"
-import {useMotionValue, motion,useMotionTemplate} from "framer-motion"
+import { React} from  "react"
 
 export default function  Work ()  {
-   //let [mousePosition,setMousePosition] = useState({ x: 0,y: 0 });
-   let mouseX = useMotionValue(0)
-   let mouseY =useMotionValue(0)
-   function handleMouseMove({ clientX,clientY,currentTarget }: MouseEvent ){
-      let{left,top} = currentTarget.getBoundingClientRect();
 
-      //setMousePosition({x: xPosition, y: yPosition});
-      mouseX.set(clientX - left);
-      mouseY.set(clientY - top);
-   }
   return (
-    <div name='work' className= 'w-full sm:h-screen md:h-screen py-10 bg-gradient-to-r from-[#0a192f] to-[#20274C] text-gray-300'  onMouseMove={handleMouseMove}>
-    <motion.div className=' flex flex-col justify-center items-center w-full h-full inset-0 opecity-0 group-hover:opacity-100' style={{background: useMotionTemplate`radial-gradient( circle at ${mouseX}px ${mouseY}px,rgb(10 25 47 / 0.15),transparent 80%)`}} >
+    <div name='work' className= 'w-full sm:h-screen md:h-screen py-10  text-gray-300'>
+    <div className=' flex flex-col justify-center items-center w-full h-full ' >
         <div className=' max-w-[1000px] w-full grid grid-cols-2 gap-8'>
             <div className=' sm:text-right pb-8 pl-4'>
                 <p className=' text-4xl font-bold inline border-b-4 border-pink-600'>Work</p>
@@ -103,7 +93,7 @@ export default function  Work ()  {
                     </div>
                     
                 </div>
-        </motion.div>
+        </div>
     </div>
     
   )

@@ -1,5 +1,4 @@
-import { React,MouseEvent} from  "react"
-import {useMotionValue, motion,useMotionTemplate} from "framer-motion"
+import { React} from  "react"
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
@@ -17,17 +16,10 @@ import TYPES from '../assets/typescript.png';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Myresume from "../assets/arvind_kumar_Resume.doc";
 const Skills = () => {
-    let mouseX = useMotionValue(0)
-    let mouseY =useMotionValue(0)
-    function handleMouseMove({ clientX,clientY,currentTarget }: MouseEvent ){
-       let{left,top} = currentTarget.getBoundingClientRect();
-       //setMousePosition({x: xPosition, y: yPosition});
-       mouseX.set(clientX - left);
-       mouseY.set(clientY - top);
-    }
+
   return (
-    <div name='skills' className=' w-full md:h-screen sm:h-full bg-gradient-to-r from-[#0a192f] to-[#20274C] text-gray-300'  onMouseMove={handleMouseMove}>
-        <motion.div  className= 'flex flex-col justify-center items-center w-full h-full inset-0 opecity-0 group-hover:opacity-100'  style={{background: useMotionTemplate`radial-gradient( circle at ${mouseX}px ${mouseY}px,rgb(10 25 47 / 0.15),transparent 80%)`}}>
+    <div name='skills' className=' w-full md:h-screen sm:h-full  text-gray-300'  >
+        <div  className= 'flex flex-col justify-center items-center w-full h-full'  >
             {/* Container*/}
             <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center text-center w-full h-full'>
                 <div>
@@ -97,7 +89,7 @@ const Skills = () => {
                   View Full Resume <IoIosArrowRoundForward size={50} className="fill-pink-600"/>
                 </a></span>
             </div>
-        </motion.div>
+        </div>
     </div>
   );
 };

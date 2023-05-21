@@ -9,7 +9,7 @@ const Navbar = () => {
     const [nav,setNav] =useState(false);
     const handleClick = () => setNav(!nav);
   return (
-    <><div className='fixed w-full h-[80px] flex justify-between items-center px-4  bg-gradient-to-r from-[#0a192f] to-[#20274C] text-gray-300'>
+    <><div className='fixed w-full h-[80px] flex justify-between items-center px-4   text-gray-300'>
           <img src={Logo} alt='logo image' style={{ width: '50px' }} />
         {/*Menu*/}
                 <ul className='hidden md:flex'>

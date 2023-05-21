@@ -1,21 +1,12 @@
-import { React,MouseEvent} from  "react"
-import {useMotionValue, motion,useMotionTemplate} from "framer-motion"
+import { React} from  "react"
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import {Link} from 'react-scroll'
 const Home = () => {
-  let mouseX = useMotionValue(0)
-  let mouseY =useMotionValue(0)
-  function handleMouseMove({ clientX,clientY,currentTarget }: MouseEvent ){
-     let{left,top} = currentTarget.getBoundingClientRect();
 
-     //setMousePosition({x: xPosition, y: yPosition});
-     mouseX.set(clientX - left);
-     mouseY.set(clientY - top);
-  }
   return (
-    <div name='home' className='w-full h-screen bg-gradient-to-r from-[#0a192f] to-[#20274C]' onMouseMove={handleMouseMove} >
+    <div name='home' className='w-full h-screen ' >
         {/* Container */}
-        <motion.div className='h-full  w-full inset-0 opecity-0 group-hover:opacity-100' style={{background: useMotionTemplate`radial-gradient( circle at ${mouseX}px ${mouseY}px,rgb(10 25 47 / 0.15),transparent 80%)`}} >
+        <div exit={{ opacity: 0 }} className='h-full  w-full '>
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center item-center h-full'>
               <p className= 'text-pink-500'>Hi, my name is</p>
               <h1 className= 'text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Arvind Rajput</h1>
@@ -35,7 +26,7 @@ const Home = () => {
                         </Link>
               </div>
             </div>
-        </motion.div>
+        </div>
     </div>
   )
 }
