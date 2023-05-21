@@ -14,6 +14,8 @@ import SQL from '../assets/sql.png';
 import CSHARP from '../assets/csharp.png';
 import JQUERY from '../assets/jquery.png';
 import TYPES from '../assets/typescript.png';
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Myresume from "../assets/arvind_kumar_Resume.doc";
 const Skills = () => {
     let mouseX = useMotionValue(0)
     let mouseY =useMotionValue(0)
@@ -27,7 +29,7 @@ const Skills = () => {
     <div name='skills' className=' w-full md:h-screen sm:h-full bg-gradient-to-r from-[#0a192f] to-[#20274C] text-gray-300'  onMouseMove={handleMouseMove}>
         <motion.div  className= 'flex flex-col justify-center items-center w-full h-full inset-0 opecity-0 group-hover:opacity-100'  style={{background: useMotionTemplate`radial-gradient( circle at ${mouseX}px ${mouseY}px,rgb(10 25 47 / 0.15),transparent 80%)`}}>
             {/* Container*/}
-            <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+            <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center text-center w-full h-full'>
                 <div>
                     <p className=' text-4xl font-bold inline border-b-4 border-pink-600'>Skills</p>
                     <p className=' py-4'>// These are the technologies I've worked with</p>
@@ -90,6 +92,10 @@ const Skills = () => {
                         <p className='my-4'>Type Script</p>
                     </div>
                 </div>
+                <span className="sm:hidden w-[190px] border-b border-transparent pb-px transition hover:border-teal-300 font-bold font-sans hover:scale-110 duration-500 motion-reduce:transition-none ">               
+                  <a  className='flex justify-between  w-full items-center text-gray-300' href={Myresume} target='_blank'>
+                  View Full Resume <IoIosArrowRoundForward size={50}/>
+                </a></span>
             </div>
         </motion.div>
     </div>
