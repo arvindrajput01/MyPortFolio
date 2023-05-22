@@ -14,7 +14,7 @@ import CSHARP from '../assets/csharp.png';
 import JQUERY from '../assets/jquery.png';
 import TYPES from '../assets/typescript.png';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Myresume from "../assets/arvind_kumar_Resume.doc";
+import Myresume from "../assets/arvind_kumar_Resume.pdf";
 const Skills = () => {
 
   return (
